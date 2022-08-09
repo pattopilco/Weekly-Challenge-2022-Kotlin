@@ -14,3 +14,10 @@ package com.mouredev.weeklychallenge2022
  * - Tienes toda la información sobre los retos semanales en https://retosdeprogramacion.com/semanales2022.
  *
  */
+
+
+const lista:number[] = [1,2,3,4,5,6,7,8,9];
+const mayor:number = Math.max(...lista);
+const filtro:number[] = lista.filter((item) => { return item !== mayor });
+const segundo_mayor = Math.max(...filtro);
+console.log(segundo_mayor);
